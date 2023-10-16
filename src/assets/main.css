@@ -1,0 +1,110 @@
+@import 'bootstrap/dist/css/bootstrap.css';
+@import 'bootstrap-icons/font/bootstrap-icons.css';
+
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+
+:root {
+  --prussian-blue: #1C3144;
+  --non-photo-blue: #8AC6D0;
+  --garnet: #754043;
+  --tan: #C9A690;
+  --white: #ffffff;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  color: var(--white);
+}
+
+button, .btn {
+  cursor: pointer;
+  padding: 16px 24px;
+  border-radius: 30px;
+  border: none;
+  font-size: 12px;
+  margin-right: 8px;
+  color: var(--white);
+}
+
+.bg-dark-blue {
+  background-color: var(--prussian-blue);
+}
+
+.bg-blue {
+  background-color: var(--non-photo-blue);
+}
+
+.bg-brown {
+  background-color: var(--garnet);
+}
+
+.bg-light-brown {
+  background-color: var(--tan);
+}
+
+.bg-white {
+  background-color: var(--white);
+}
+
+/* utility classes */
+
+.container {
+  width: 100%;
+  padding: 40px 10px;
+  max-width: 850px;
+  margin: 0 auto;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: var(--non-photo-blue);
+}
+
+/* Status Button Styling */
+
+.status-button::before {
+    content: "";
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-right: 8px;
+  }
+
+.status-button {
+  font-size: 12px;
+  margin-right: 30px;
+  align-items: center;
+  padding: 8px 30px;
+  border-radius: 10px;
+}
+
+.paid::before {
+  background-color: var(--non-photo-blue);
+}
+
+.paid {
+  color: var(--non-photo-blue);
+  background-color: rgba(138, 198, 208, 0.2);
+}
+
+.pending::before {
+  background-color: var(--tan);
+}
+
+.pending {
+  color: var(--tan);
+  background-color: rgba(117, 64, 67, 0.6);
+}
+
+.draft::before {
+  background-color: var(--white);
+}
+
+.draft {
+  color: var(--white);
+  background-color: rgba(255, 255, 255, 0.2);
+}
